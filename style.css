@@ -1,0 +1,97 @@
+/*──────────────── Base & Reset ────────────────*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;        /* light grey */
+  color: #111;                /* almost black */
+}
+
+/*──────────────── Header & Nav ────────────────*/
+.site-header {
+  background: #0077cc;        /* primary blue */
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.site-header h1 {
+  font-size: 2.75rem;
+  margin-bottom: 0.5rem;
+}
+.site-header .subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+}
+.site-nav ul {
+  list-style: none;
+  display: inline-flex;
+  gap: 1rem;
+}
+.site-nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  transition: background 0.3s, color 0.3s;
+}
+.site-nav a:hover {
+  background: #fff;
+  color: #0077cc;
+}
+
+/*──────────────── Main Sections ────────────────*/
+main {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+section {
+  margin-bottom: 3rem;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0077cc;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+section p {
+  margin-bottom: 1rem;
+}
+
+/*──────────────── Footer ────────────────*/
+.site-footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #333;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+/*──────────────── Responsive ────────────────*/
+@media (max-width: 600px) {
+  .site-header h1 {
+    font-size: 2rem;
+  }
+  section {
+    padding: 1rem;
+  }
+  .site-nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
